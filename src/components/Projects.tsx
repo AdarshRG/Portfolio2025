@@ -6,7 +6,7 @@ const projectsData = [
   {
     title: 'Tobys Estate Australia',
     description: 'I recently developed an e-commerce platform for a leading coffee brand in Australia using the BigCommerce Stencil framework."',
-    image: '/toby.png',
+    image: '/Portfolio2025/toby.png',
     tags: ['BigCommerce','Stencil', 'JavaScript', 'Stencil', 'SEO','GraphQl'],
     links: {
       github: 'https://github.com/AdarshRG',
@@ -16,7 +16,7 @@ const projectsData = [
   {
     title: 'Toolmart Australia',
     description: 'E-commerce platform for Tools and other mechanical parts using BigCommerce Stencil framework',
-    image: '/Toolmart.png',
+    image: '/Portfolio2025/Toolmart.png',
     tags: ['BigCommerce', 'JavaScript', 'Stencil', 'SEO','GraphQl'],
     links: {
       github: 'https://github.com/AdarshRG',
@@ -26,7 +26,7 @@ const projectsData = [
   {
     title: 'Medcart',
     description: 'E-commerce platform for medical supplies using BigCommerce Stencil framework',
-    image: '/medcart.png',
+    image: '/Portfolio2025/medcart.png',
     tags: ['BigCommerce', 'JavaScript', 'Stencil', 'SEO'],
     links: {
       github: 'https://github.com/AdarshRG',
