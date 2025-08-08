@@ -144,7 +144,7 @@ export const Hero = () => {
           <div className="relative w-80 h-80 mx-auto floating-image">
             <div className="absolute inset-0 bg-gradient-to-br from-portfolio-primary to-portfolio-accent rounded-full blur-2xl opacity-50"></div>
             <img 
-              src="/Media-profile.jpg" 
+              src="/Portfolio2025/Media-profile.jpg" 
               alt="Adarsh RG" 
               className="relative rounded-full w-full h-full object-cover shadow-2xl" 
             />

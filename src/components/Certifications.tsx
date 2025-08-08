@@ -8,7 +8,7 @@ const Certifications = () => {
             <div className="flex flex-col sm:flex-row items-center">
               <div className="w-full sm:w-1/3 mb-6 sm:mb-0">
                 <img 
-                  src="/Bigdev.jpg" 
+                  src="/Portfolio2025/Bigdev.jpg" 
                   alt="Full Stack B-commerce Developer Certificate" 
                   className="w-full h-auto rounded-lg border-2 border-portfolio-primary shadow-md" 
                 />
@@ -25,7 +25,7 @@ const Certifications = () => {
             <div className="flex flex-col sm:flex-row items-center">
               <div className="w-full sm:w-1/3 mb-6 sm:mb-0">
                 <img 
-                   src="/mern.png" 
+                   src="/Portfolio2025/mern.png" 
                   alt="MERN Stack Crash Course Certificate" 
                   className="w-full h-auto rounded-lg border-2 border-portfolio-primary shadow-md" 
                 />
