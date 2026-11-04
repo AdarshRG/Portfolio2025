@@ -55,7 +55,7 @@ export const About = () => {
           >
             <h3 className="text-2xl font-bold mb-4 gradient-text">Who I Am</h3>
             <p className="text-gray-700 mb-4">
-              I'm a Front-End Web Developer with 3 years of expertise in BigCommerce and the MERN stack. 
+              I'm a Front-End Web Developer with 4 years of expertise in BigCommerce and the MERN stack. 
               My journey in web development has equipped me with a strong foundation in creating 
               responsive, user-focused websites and e-commerce solutions.
             </p>
