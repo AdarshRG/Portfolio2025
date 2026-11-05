@@ -110,3 +110,27 @@
   height: 100px;
   background: linear-gradient(to bottom left, transparent 49%, white 50%);
 }
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  [role="dialog"], [role="dialog"] * {
+    visibility: visible;
+  }
+  [role="dialog"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none !important;
+    border: none !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  button, .dialog-close {
+    display: none !important;
+  }
+}

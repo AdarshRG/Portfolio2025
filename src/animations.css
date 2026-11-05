@@ -5,27 +5,131 @@
 }
 
 .animated-gradient-text {
-  background: linear-gradient(to right, #ff7e5f, #feb47b, #86a8e7, #91eae4);
-  background-size: 200% 200%;
+  background: linear-gradient(to right, #ff7e5f, #feb47b, #c084fc, #818cf8, #38bdf8);
+  background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradient-animation 10s ease infinite;
+  animation: gradient-animation 8s ease infinite;
 }
 
 @keyframes float {
   0% {
-    transform: translateY(0px);
+    transform: translateY(0px) rotate(0deg);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-12px) rotate(1deg);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes float-reverse {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(12px) rotate(-1deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
   }
 }
 
 .floating-image {
   animation: float 6s ease-in-out infinite;
+}
+
+.floating-badge-1 {
+  animation: float 5s ease-in-out infinite;
+}
+
+.floating-badge-2 {
+  animation: float-reverse 6s ease-in-out infinite 0.5s;
+}
+
+.floating-badge-3 {
+  animation: float 5.5s ease-in-out infinite 1s;
+}
+
+.floating-badge-4 {
+  animation: float-reverse 6.5s ease-in-out infinite 1.5s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.shimmer-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+  transform: translateX(-100%);
+  animation: shimmer 4s infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.3), 0 0 30px rgba(139, 92, 246, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.5), 0 0 45px rgba(139, 92, 246, 0.25);
+  }
+}
+
+.glow-card {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
 }
 
 .card-fly-in {
